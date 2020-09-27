@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 800px;
+  height: 400px;
+}
+
+li {
+  list-style: none;
+}
