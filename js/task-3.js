@@ -17,9 +17,9 @@ const images = [
 ];
 
 const findGallery = document.querySelector("#gallery");
-const addGallery = images.map(
-  (image) => `<li><img src='${image.url}' alt='${image.url}'></li>`
-);
+const addGallery = images
+  .map((image) => `<li><img src='${image.url}' alt='${image.url}'></li>`)
+  .join("");
 findGallery.insertAdjacentHTML("beforeend", addGallery);
 
 console.log(addGallery);
